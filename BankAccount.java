@@ -21,11 +21,11 @@ public class BankAccount {
         setSavingsBalance(getSavingsBalance() + deposit);
     }
 
-    public void withdrawMoney(String account, double deposit){
+    public void withdrawMoney(String account, double withdrawal){
         if(account == "checking")
-        setCheckingBalance(getCheckingBalance() - deposit);
+        setCheckingBalance(getCheckingBalance() - withdrawal);
         if(account == "savings")
-        setSavingsBalance(getSavingsBalance() - deposit);
+        setSavingsBalance(getSavingsBalance() - withdrawal);
     }
 
     public void displayBalance(){
